@@ -1,7 +1,72 @@
-  @font-face{font-family:Avenir;src:url("../font/avenir/AvenirLTStd-Book.otf") format("opentype")}
-  @font-face{font-family:Avenir-light;src:url("../font/avenir/AvenirLTStd-Light.otf") format("opentype")}
-  @font-face{font-family:Avenir-light-oblique;src:url("../font/avenir/AvenirLTStd-LightOblique.otf") format("opentype")}
-  @font-face{font-family:Avenir-bold;src:url("../font/avenir/AvenirLTStd-Heavy.otf") format("opentype")}
-  @font-face{font-family:Avenir-bolder;src:url("../font/avenir/AvenirNextLTPro-Bold.otf") format("opentype")}
-  @font-face{font-family:Avenir-medium-oblique;src:url("../font/avenir/AvenirNextLTPro-BoldCnIt.otf") format("opentype")}
-  @font-face{font-family:Avenir-bold-oblique;src:url("../font/avenir/AvenirLTStd-HeavyOblique.otf") format("opentype")}*{-webkit-box-sizing:border-box;box-sizing:border-box}
+/* IMPLEMENT FONT */
+@font-face {
+  font-family:brandon-grotesque;
+  src:url("../font/brandon-grotesque/Brandon_reg.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family:brandon-grotesque;
+  src:url("../font/brandon-grotesque/Brandon_reg_it.otf") format("opentype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family:brandon-grotesque;
+  src:url("../font/brandon-grotesque/Brandon_med.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family:brandon-grotesque;
+  src:url("../font/brandon-grotesque/Brandon_bld.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family:brandon-grotesque;
+  src:url("../font/brandon-grotesque/Brandon_blk.otf") format("opentype");
+  font-weight: bolder;
+}
+
+* {
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box
+}
+
+body {
+  background-color: #FFFBF3;
+}
+
+/* SIDEBAR NAVIGATION */
+.side-nav {
+  font-family: 'brandon-grotesque', sans-serif;
+  text-transform: uppercase;
+  position: fixed;
+  left: 0;
+  margin-top: 10em;
+  margin-left: 4em;
+}
+
+.side-nav a {
+  text-decoration: none;
+  color: #FCDF68;
+  font-size: 2em;
+  display: block;
+}
+
+.side-nav a:hover {
+  color: #82A37F;
+  -webkit-transition: color 2s ease-out;
+  -moz-transition: color 2s ease-out;
+  -o-transition: color 2s ease-out;
+  transition: color 2s ease-out;
+}
+
+/* RESPONSIVENESS */
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .side-nav {
+    top:0;
+  }
+}
