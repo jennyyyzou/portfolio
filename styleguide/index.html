@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio. Styleguide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="../img/icon.jpg">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <div class="logo">
+          <a href="../index.html">jenny zou</a>
+        </div>
+        <div class="nav-buttons">
+          <div><a href="index.html" class="nav-button active-button">styleguide</a></div>
+          <div><a href="citations.html" class="nav-button">citations</a></div>
+          <div><a href="https://gitlab1.its.sfu.ca/yyzou/iat339-portfolio/tree/yyzou" class="nav-button">git repo</a></div>
+        </div>
+      </nav>
+    </header>
+
+  <main class="styleguide">
+    <section class="intro">
+      <h2>intro</h2>
+      <div class="about-content">
+        <ul>
+          <li>styleguide</li>
+        </ul>
+      </div>
+
+      <div class="about-content about-intro">
+        <div class="position-title"><a class="nav-button" href="#interactive_elements">Interactive Elements</a></div>
+        <div class="position-title"><a class="nav-button" href="#text_elements">Text Elements</a></div>
+        <div class="position-title"><a class="nav-button" href="#combined_elements">Combined Elements</a></div>
+      </div>
+    </section>
+
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
+        <h2 class="title">Interactive Elements</h2>
+        <!-- Default Button styling section -->
+        <section>
+          <h3>In-text link</h3>
+          <div class="item-details">
+            <h4>CSS selector:</h4>
+            <p>.in-text-link</p>
+
+            <h4>Sample code:</h4>
+            <pre>
+              <code>
+&lt;a href="#" class="in-text-link"&gt;In-text link&lt;/a&gt;
+              </code>
+            </pre>
+
+            <h4>Rendered element:</h4>
+            <a class="in-text-link" href="#">In-text link</a>
+          </div>
+        </section>
+
+        <section>
+
+          <h3>Navigation Button</h3>
+          <div class="item-details">
+            <h4>CSS selector:</h4>
+            <p>.nav-button</p>
+
+            <h4>Sample code:</h4>
+            <pre>
+                <code>
+&lt;a href="index.html" class="nav-button"&gt;Nav Button&lt;/a&gt;
+                  </code>
+            </pre>
+            <h4>Rendered element:</h4>
+              <a href="index.html" class="nav-button">Nav Button</a>
+          </div>
+        </section>
+
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <h2 class="title">Text Elements</h2>
+        <section>
+          <h3>Headings</h3>
+          <div class="item-details">
+            <h4>Sample code:</h4>
+            <pre>
+                <code>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+                            </code>
+            </pre>
+
+            <h4>Rendered element:</h4>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+          </div>
+        </section>
+
+        <section>
+          <h3>Paragraphs</h3>
+          <div class="item-details">
+            <h4>Sample code:</h4>
+            <pre>
+                <code>
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros sapien, faucibus ut rhoncus vel, porta quis leo. Suspendisse potenti. Sed maximus tristique ex, a semper tortor euismod quis. Maecenas non egestas mi, ac placerat tortor. Sed in purus luctus, imperdiet massa eget, facilisis quam. Sed et fringilla est, non pellentesque augue. Morbi bibendum turpis quam, semper commodo tortor facilisis quis.&lt;/p&gt;
+                  </code>
+            </pre>
+
+            <h4>Rendered element:</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros sapien, faucibus ut rhoncus vel, porta quis leo. Suspendisse potenti. Sed maximus tristique ex, a semper tortor euismod quis. Maecenas non egestas mi, ac placerat tortor. Sed in purus luctus, imperdiet massa eget, facilisis quam. Sed et fringilla est, non pellentesque augue. Morbi bibendum turpis quam, semper commodo tortor facilisis quis.</p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Bulleted Lists</h3>
+          <div class="item-details">
+            <h4>Sample code:</h4>
+            <pre>
+                <code>
+&lt;ul&gt;
+&lt;li&gt;List item 1&lt;/li&gt;
+&lt;li&gt;List item 2&lt;/li&gt;
+&lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ul&gt;
+              </code>
+            </pre>
+
+            <h4>Rendered element:</h4>
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h3>Numbered Lists</h3>
+          <div class="item-details">
+            <h4>Sample code:</h4>
+            <pre>
+                <code>
+&lt;ol&gt;
+&lt;li&gt;List item 1&lt;/li&gt;
+&lt;li&gt;List item 2&lt;/li&gt;
+&lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ol&gt;
+                  </code>
+            </pre>
+
+            <h4>Rendered element:</h4>
+            <ol>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+            </ol>
+          </div>
+        </section>
+
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
+
+
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+        <h2 class="title">Combined Elements</h2>
+        <section>
+          <h3>Main Navigation</h3>
+          <div class="item-details">
+            <h4>CSS selector:</h4>
+            <p>main-nav, nav-buttons</p>
+            <h4>Sample code:</h4>
+            <pre>
+                <code>
+&lt;header&gt;
+  &lt;nav class="main-nav"&gt;
+    &lt;div class="nav-buttons"&gt;
+      &lt;a href="index.html" class="nav-button"&gt;work&lt;/a&gt;
+      &lt;a href="about/index.html" class="nav-button"&gt;about&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+                  </code>
+            </pre>
+
+            <h4>Rendered element:</h4>
+            <header>
+              <nav class="main-nav">
+                <div class="nav-buttons">
+                  <a href="index.html" class="nav-button">work</a>
+                  <a href="about/index.html" class="nav-button">about</a>
+                </div>
+              </nav>
+            </header>
+          </div>
+        </section>
+
+        <section>
+          <h3>Project Listing</h3>
+          <div class="item-details">
+            <h4>CSS Selector</h4>
+            <p>.projects, .project</p>
+
+            <h4>Sample code:</h4>
+            <pre>
+                <code>
+&lt;section class="projects"&gt;
+    &lt;div class="project"&gt;
+      &lt;a href="../sharethemeal/index.html"&gt;
+        &lt;div class="container"&gt;
+        &lt;img src="../img/sharethemeal/thumb.jpg" alt="ShareTheMeal - Impact Tracker" class="image"&gt;
+        &lt;div class="overlay"&gt;
+        &lt;/div&gt;
+        &lt;h2 class="project-name"&gt;Impact Tracker&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+      &lt;p class="project-category"&gt;Delivering transparency through personal tracker.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="project"&gt;
+        &lt;a href="../readly/index.html"&gt;
+          &lt;div class="container"&gt;
+          &lt;img src="../img/readly/thumb.jpg" alt="Readly - Reading App" class="image"&gt;
+          &lt;div class="overlay"&gt;
+          &lt;/div&gt;
+          &lt;h2 class="project-name"&gt;Readly&lt;/h2&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+        &lt;p class="project-category"&gt;Maintaining lifelong reading habit.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+                </code>
+            </pre>
+
+
+        <h4>Rendered element:</h4>
+        <section class="projects">
+            <div class="project">
+              <a href="../sharethemeal/index.html">
+                <div class="container">
+                <img src="../img/sharethemeal/thumb.jpg" alt="ShareTheMeal - Impact Tracker" class="image">
+                <div class="overlay">
+                </div>
+                <h2 class="project-name">Impact Tracker</h2>
+              </div>
+            </a>
+              <p class="project-category">Delivering transparency through personal tracker.</p>
+          </div>
+
+          <div class="project">
+                <a href="../readly/index.html">
+                  <div class="container">
+                  <img src="../img/readly/thumb.jpg" alt="Readly - Reading App" class="image">
+                  <div class="overlay">
+                  </div>
+                  <h2 class="project-name">Readly</h2>
+                </div>
+              </a>
+                <p class="project-category">Maintaining lifelong reading habit.</p>
+        </div>
+
+        </section>
+      </div>
+    </section>
+
+        <section>
+
+          <h3>Colour Swatches</h3>
+          <div class="item-details">
+            <p>#FFFFFF</p>
+            <div class="grid-12 white empty"></div>
+
+            <p>#FFA797</p>
+            <div class="grid-12 pink empty"></div>
+
+            <p>#43848F</p>
+            <div class="grid-12 green empty"></div>
+
+            <p>#31495A</p>
+            <div class="grid-12 dark-green empty"></div>
+
+          </div>
+
+        </section>
+
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+      </main>
+      <footer>
+        <div class="copyright">
+          <p>&copy; Jenny Zou, 2018</p>
+        </div>
+      </footer>
+
+  </body>
+</html>

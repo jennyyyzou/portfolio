@@ -1,0 +1,505 @@
+/* importing the fonts from local files */
+@font-face {
+  font-family: Avenir;
+  src: url("../font/avenir/AvenirLTStd-Book.otf") format("opentype")
+}
+
+@font-face {
+  font-family: Avenir-light;
+  src: url("../font/avenir/AvenirLTStd-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Avenir-light-oblique;
+  src: url("../font/avenir/AvenirLTStd-LightOblique.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Avenir-bold;
+  src: url("../font/avenir/AvenirLTStd-Heavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Avenir-bolder;
+  src: url("../font/avenir/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Avenir-medium-oblique;
+  src: url("../font/avenir/AvenirNextLTPro-BoldCnIt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Avenir-bold-oblique;
+  src: url("../font/avenir/AvenirLTStd-HeavyOblique.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Avenir', sans-serif;
+  color: #241f20;
+  margin: 0;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+/* styling for header */
+header {
+  position: relative;
+  margin: 2em 1em;
+}
+
+
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 1em auto;
+}
+
+.main-nav>div {
+  flex: 0 0 50%;
+}
+
+.logo {
+  font-family: 'Avenir-bold', sans-serif;
+  font-size: 1.4em;
+  margin-left: 1em;
+}
+
+.logo a, .logo a:visited {
+  text-decoration: none;
+  color: #FFA797;
+  font-weight: bold;
+}
+
+.logo a:hover, .logo a:focus {
+  text-decoration: none;
+}
+
+.logo {
+  position: relative;
+}
+
+
+/* styling for nav-button */
+.nav-buttons {
+  position: absolute;
+  right: 0;
+  font-family: 'Avenir-bold', sans-serif;
+  font-size: 1em;
+  margin-top: 0.3em;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-buttons a {
+  margin: 0 2em;
+}
+
+.nav-button, .nav-button:visited {
+  text-decoration: none;
+  color: #43848F;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.nav-button:hover, .nav-button:focus {
+  /* color: #ffc0cb; */
+  text-decoration: line-through;
+}
+
+.active-button {
+  font-family: 'Avenir-bolder', sans-serif;
+  text-decoration: line-through;
+}
+
+
+
+/* styling for footer */
+footer {
+  padding: 1em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  color: #97999B;
+  position: absolute;
+  right: 0;
+  margin-right: 3em;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 1em;
+}
+
+.text-link {
+  color: #31495A;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.text-link:hover {
+  color: #ffc0cb;
+  font-weight: bolder;
+}
+
+
+/* styling for intro section */
+.intro {
+  /* background-color: #D6E1DC; */
+  /* text-align: center; */
+  padding: 0 5em 5em 5em;
+  color: #31495A;
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
+}
+
+.intro h2 {
+  display: none;
+}
+
+.about-content {
+  flex: 0 0 50%;
+  padding: 2em;
+}
+
+.about-content li {
+  font-family: 'Avenir-bold', sans-serif;
+  font-size: 5em;
+}
+
+.about-content .position-title, .process .position-title {
+  font-family: 'Avenir-bold-oblique', sans-serif;
+  /* color: #ffc0cb; */
+  color: #fff;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+}
+
+.about-intro {
+  padding: 5em;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+/* received from https://stackoverflow.com/questions/4214291/how-to-set-different-body-background-color-for-different-pages-in-one-css-files */
+body#portfolio {
+  background-color: #FFC7C0;
+  /* background-color: #F7D4C3; */
+  margin: 0;
+}
+
+#portfolio .about-content li {
+  color: #43848F;
+}
+
+#portfolio .intro {
+  margin-top: 8em;
+}
+
+
+/* styling for project page */
+.projects {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+}
+
+.projects>div {
+  flex: 0 0 40%;
+  width: 80%;
+  padding: 4em;
+  margin: 0 auto 0 auto;
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.intro .about-content p {
+  display: inline;
+  line-height: 2em;
+}
+
+.process .position-title {
+    text-align: center;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    max-width: 29em;
+    margin: 2em auto;
+}
+
+/* styling for thumbnail */
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  width: 90%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: .5s ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.6;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container:hover .project-name {
+  text-decoration: line-through;
+}
+
+.project-name {
+  font-family: 'Avenir-bold', sans-serif;
+  color: #31495A;
+  text-decoration: none;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  transition: .5s ease;
+}
+
+.project-category {
+  font-size: 0.9em;
+  margin-top: 0.2em;
+  color: #567577;
+}
+
+/* styling for about page */
+.about .about-content li {
+  color: #FFA797;
+}
+
+.about-img{
+  width: 80%;
+}
+
+.about-intro {
+  padding: 5em;
+}
+
+.in-text-link {
+  color: #FFA797;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.in-text-link:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/* styling for process content */
+.process {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2em 10em;
+  line-height: 1.8em;
+}
+
+.process-content-column {
+  color: #31495A;
+  display: flex;
+  flex-direction: row;
+}
+
+.process-content-column>div {
+  flex: 0 0 50%;
+}
+
+.process-content-column .process-img-item {
+  margin: 1em;
+}
+.process-content-column .process-img-item img {
+  width: 50%;
+  margin: 0 6em;
+}
+
+.process-content ul {
+  padding-left: 0;
+}
+
+.process-title {
+  font-family: 'Avenir-bold', sans-serif;
+  color: #31495A;
+}
+
+.process-subtitle {
+  color: #43848F;
+  font-family: 'Avenir-bold-oblique', sans-serif;
+  margin: 1em 0;
+}
+
+.process-img-item {
+  margin: 0;
+}
+
+.process-img-item img{
+  width: 100%;
+}
+
+figcaption {
+  font-family: 'Avenir-light-oblique', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+
+/* styling for project page */
+.project-content .position-title {
+  color: #FFA797;
+}
+
+.banner {
+  width: 100%;
+}
+
+.next-project {
+  color: #43848F;
+  text-align: center;
+  font-family: 'Avenir-bold', sans-serif;
+  letter-spacing: 0.01em;
+  font-size: 1.1em;
+  margin: 6em 0;
+}
+
+/* styling for responsiveness */
+
+@media (max-width: 580px) {
+  .intro {
+    margin: 0;
+  }
+  section.process {
+    margin-left: 5em;
+  }
+  .project-content .process{
+    margin: 0 1em;
+  }
+}
+
+@media (max-width: 564px) {
+  .flex-container, footer {
+    flex-direction: column;
+  }
+  .copyright {
+    position: relative;
+    margin: auto;
+  }
+  .footer-links ul {
+    padding-left: 0;
+  }
+  .footer-links {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1177px) {
+  .about .intro {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .about-img {
+    width: 70%;
+    padding: 0 1.5em;
+  }
+}
+
+@media (max-width: 1070px) {
+  .intro {
+    flex-direction: column;
+    padding: 0;
+  }
+  .about {
+    flex-direction: column;
+    padding: 0;
+  }
+  .process-content-column {
+    flex-direction: column;
+  }
+  .projects {
+    flex-direction: column;
+  }
+  .projects>div {
+    padding: 5em 0;
+    width: 50%;
+  }
+  .process {
+    margin: 2em 4em;
+  }
+  .process-content-column .process-img-item img {
+    width: 50%;
+    margin: 0 5em;
+  }
+}
+
+
+@media (max-width: 611px) {
+  .about-content {
+    padding: 2em 1.4em;
+  }
+  .about-content ul {
+    padding: 0 1.3em;
+  }
+  .about-intro {
+    padding: 4em 1.6em;
+  }
+}
+
+@media (max-width: 564px) {
+  .nav-buttons {
+    flex-direction: column;
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 550px) {
+  .projects>div {
+    width: 100%;
+    margin: 0 1.6em
+  }
+  .main-nav {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
