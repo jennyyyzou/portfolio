@@ -1,7 +1,5 @@
-IAT339 Personal Portfolio
+Design Portfolio
 
 Designed and developed by:
 
-Yuyan (Jenny) Zou
-
-Yuyan Zou (jennyyyzou@hotmail.com)
+Jenny Zou @ 2019
