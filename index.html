@@ -9,7 +9,22 @@
     <link rel="icon" href="img/icon.jpg">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/fontface.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!-- IMPLEMENT JQUERY -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#about").click(function(){
+          $("#landing-long-content").fadeIn('slow');
+          $("#portrait").hide();
+        });
+      });
+
+    </script>
 
   </head>
 
@@ -18,20 +33,37 @@
       <div class="side-nav">
         <ul>
           <li><a href="#work" class="nav-button">work</a></li>
-          <li><a href="resume.pdf" class="nav-button">resume</a></li>
+          <li><a href="resume.pdf" target="_blank" class="nav-button">resume</a></li>
         </ul>
       </div>
 
       <div class="landing-copy">
         <h1 class="landing-title">Jenny</h1>
         <div class="divider"></div>
-        <div class="landing-content">
+        <div class="landing-short-content">
           <p>hi, i’m an <strong>interaction designer</strong> in love with art directing, copywriting, and building communities </p>
+          <p>get to know <a id="about" href="#about">about me ⟶</a></p>
         </div>
       </div>
 
       <div class="landing-image">
-        <img src="img/portrait.jpg" alt="Portrait" class="portrait">
+        <img src="img/portrait.jpg" alt="Portrait" id="portrait">
+        <div id="landing-long-content">
+
+          <svg id="close-icon-container" fill="#000000" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+            <g class="close-icon">
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+              <path d="M0 0h24v24H0z" fill="none"></path>
+            </g>
+          </svg>
+
+          <p>I enjoy exploring the design field of user experience through iterative process and inspiration I find in my daily life.  My desire is to use storytelling, graphic elements and iteration to problem-solving for developing human-oriented projects that builds communities.<p>
+
+          <p>If you'd like to chat over tea or a beer about collaborations, opportunities, or food, check out my <a href="resume.pdf" target="_blank">resume</a> or shoot me an <a href="mailto:jennyyyzou@hotmail.com">email</a>!</p>
+
+
+
+        </div>
       </div>
 
       <div class="landing-copy-1">

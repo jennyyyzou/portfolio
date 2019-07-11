@@ -5,7 +5,7 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	grid-template-columns: 2fr 3fr 3fr 3fr;
-	/* grid-gap: 15px; */
+	grid-gap: 10px;
 }
 
 
@@ -17,6 +17,11 @@
 body {
   background-color: #FFFBF3;
   color: #58595B;
+
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -27,6 +32,7 @@ strong {
   font-size: bolder;
   color: #82A37F;
 }
+
 
 /* /////////////////////////////////////////////////////////////////////////////// */
 /*//////////////////////////// MAIN LANDING PAGE //////////////////////////////////*/
@@ -70,11 +76,11 @@ strong {
   color: #82A37F;
   text-transform: uppercase;
   font-size: 5em;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.2em;
   margin: 0;
 }
 
-.landing-content {
+.landing-short-content {
   font-family: 'Roboto Mono', sans-serif;
   font-style: italic;
   max-width: 18em;
@@ -98,20 +104,44 @@ strong {
   margin-bottom: 2em;
 }
 
-.portrait {
+#portrait {
   width: 100%;
   height: auto;
+  border: 18px solid #FCDF68;
+}
+
+#landing-long-content {
+  display: none;
+  font-family: 'Roboto Mono', sans-serif;
+  max-width: 100%;
+  max-height:auto;
+  line-height: 22px;
+  border: 18px solid #FCDF68;
+  padding: 1.2em;
+  font-size: 0.8em;
+}
+
+.close-icon:hover{
+	fill:#98b579;
+	cursor: pointer;
+}
+
+.close-icon{
+	stroke-width: 10;
+	stroke:rgba(255,255,255,0);
 }
 
 /* FOOTER */
 footer {
   position: absolute;
   bottom: 0;
-  margin-left: 4em;
+  margin-left: 2.8em;
 }
 
 .footer-copyright {
   font-family: 'Roboto Mono', sans-serif;
+  color: #939598;
+  font-size: 0.7em;
 }
 
 /* RESPONSIVENESS */
