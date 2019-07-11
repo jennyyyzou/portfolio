@@ -11,13 +11,11 @@
 
 * {
   -webkit-box-sizing:border-box;
-  box-sizing:border-box
+  box-sizing:border-box;
 }
 
 body {
-  background-color: #FFFBF3;
   color: #58595B;
-
 }
 
 a {
@@ -31,6 +29,16 @@ ul {
 strong {
   font-size: bolder;
   color: #82A37F;
+}
+
+#fullpage {
+  height: 100vh;
+  width: 100vw;
+}
+
+#fullpage section {
+  height: 100vh;
+  background-color: #FFFBF3;
 }
 
 
@@ -47,6 +55,7 @@ strong {
   font-family: 'brandon-grotesque', sans-serif;
   text-transform: uppercase;
   top: 2em;
+  position:fixed;
 }
 
 .side-nav a {
@@ -136,6 +145,7 @@ footer {
   position: absolute;
   bottom: 0;
   margin-left: 2.8em;
+  position: fixed;
 }
 
 .footer-copyright {

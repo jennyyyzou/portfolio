@@ -15,22 +15,17 @@
     <!-- IMPLEMENT JQUERY -->
     <script src="js/jquery.min.js"></script>
     <script src="js/javascript.js"></script>
-
-    <script>
-      $(document).ready(function(){
-        $("#about").click(function(){
-          $("#landing-long-content").fadeIn('slow');
-          $("#portrait").hide();
-        });
-      });
-
-    </script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/jquery.fullpage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js"></script>
 
   </head>
 
   <body>
+    <div id="fullpage">
+    <!-- LANDING PAGE SECTION -->
     <section id="landing-page" class="grid-1">
-      <div class="side-nav">
+      <div class="side-nav fixed">
         <ul>
           <li><a href="#work" class="nav-button">work</a></li>
           <li><a href="resume.pdf" target="_blank" class="nav-button">resume</a></li>
@@ -60,26 +55,32 @@
           <p>I enjoy exploring the design field of user experience through iterative process and inspiration I find in my daily life.  My desire is to use storytelling, graphic elements and iteration to problem-solving for developing human-oriented projects that builds communities.<p>
 
           <p>If you'd like to chat over tea or a beer about collaborations, opportunities, or food, check out my <a href="resume.pdf" target="_blank">resume</a> or shoot me an <a href="mailto:jennyyyzou@hotmail.com">email</a>!</p>
-
-
-
         </div>
       </div>
 
       <div class="landing-copy-1">
         <h1 class="landing-title">Zou</h1>
       </div>
-
     </section>
+    <!-- LANDING PAGE ENDS -->
 
-    <!-- <section id="work" class="project-list">
+    <!-- PROJECT SECTION -->
+    <section id="work" class="project-list">
       <h2>Project 1</h2>
       <h2>Project 2</h2>
       <h2>Project 3</h2>
-    </section> -->
-  </body>
+    </section>
+    <!-- PROJECT SECTION ENDS -->
 
-  <footer>
+    <script>
+      // FULL PAGE
+      FastClick.attach(document.body);
+      $('#fullpage').fullpage();
+    </script>
+
+   </div>
+
+  <footer class="fixed">
     <div class="footer-copyright">
       <p>made by jenny zou in 2019</p>
       <!-- <p>say hi to <a href="mailto:yyzou@sfu.ca?subject=Hey!" class="in-text-link">jennyyyzou@hotmail.com</a></p> -->
