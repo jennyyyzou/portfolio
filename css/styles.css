@@ -1,33 +1,13 @@
-/* IMPLEMENT FONT */
-@font-face {
-  font-family:brandon-grotesque;
-  src:url("../font/brandon-grotesque/Brandon_reg.otf") format("opentype");
-  font-weight: normal;
+/*//////// GRID /////////*/
+.grid-1 {
+	display: grid;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	grid-template-columns: 2fr 3fr 3fr 3fr;
+	/* grid-gap: 15px; */
 }
 
-@font-face {
-  font-family:brandon-grotesque;
-  src:url("../font/brandon-grotesque/Brandon_reg_it.otf") format("opentype");
-  font-style: italic;
-}
-
-@font-face {
-  font-family:brandon-grotesque;
-  src:url("../font/brandon-grotesque/Brandon_med.otf") format("opentype");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family:brandon-grotesque;
-  src:url("../font/brandon-grotesque/Brandon_bld.otf") format("opentype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family:brandon-grotesque;
-  src:url("../font/brandon-grotesque/Brandon_blk.otf") format("opentype");
-  font-weight: bolder;
-}
 
 * {
   -webkit-box-sizing:border-box;
@@ -36,23 +16,39 @@
 
 body {
   background-color: #FFFBF3;
+  color: #58595B;
+}
+
+ul {
+  list-style-type: none;
+}
+
+strong {
+  font-size: bolder;
+  color: #82A37F;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/*//////////////////////////// MAIN LANDING PAGE //////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+#landing-page div {
+    position: relative;
 }
 
 /* SIDEBAR NAVIGATION */
 .side-nav {
   font-family: 'brandon-grotesque', sans-serif;
   text-transform: uppercase;
-  position: fixed;
-  left: 0;
-  margin-top: 10em;
-  margin-left: 4em;
+  top: 2em;
 }
 
 .side-nav a {
   text-decoration: none;
   color: #FCDF68;
-  font-size: 2em;
+  font-size: 1.7em;
   display: block;
+  letter-spacing: 0.1em;
 }
 
 .side-nav a:hover {
@@ -61,6 +57,61 @@ body {
   -moz-transition: color 2s ease-out;
   -o-transition: color 2s ease-out;
   transition: color 2s ease-out;
+}
+
+/* LANDING PAGE */
+.landing-copy {
+  top: 10em;
+}
+
+.landing-title {
+  font-family: 'brandon-grotesque', sans-serif;
+  font-weight: bolder;
+  color: #82A37F;
+  text-transform: uppercase;
+  font-size: 5em;
+  letter-spacing: 0.4em;
+  margin: 0;
+}
+
+.landing-content {
+  font-family: 'Roboto Mono', sans-serif;
+  font-style: italic;
+  max-width: 18em;
+  line-height: 25px;
+}
+
+.landing-image {
+  top: 8em;
+}
+
+.landing-copy-1 {
+  top: 20em;
+}
+
+.divider {
+  height: 15px;
+  width: 70px;
+  border-radius: 2px;
+  background-color: #82A37F;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.portrait {
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-left: 4em;
+}
+
+.footer-copyright {
+  font-family: 'Roboto Mono', sans-serif;
 }
 
 /* RESPONSIVENESS */

@@ -1,0 +1,30 @@
+/* IMPLEMENT FONT */
+@font-face {
+  font-family:brandon-grotesque;
+  src:url("../font/brandon-grotesque/Brandon_reg.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family:brandon-grotesque;
+  src:url("../font/brandon-grotesque/Brandon_reg_it.otf") format("opentype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family:brandon-grotesque;
+  src:url("../font/brandon-grotesque/Brandon_med.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family:brandon-grotesque;
+  src:url("../font/brandon-grotesque/Brandon_bld.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family:brandon-grotesque;
+  src:url("../font/brandon-grotesque/Brandon_blk.otf") format("opentype");
+  font-weight: bolder;
+}
