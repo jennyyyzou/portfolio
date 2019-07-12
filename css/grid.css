@@ -24,5 +24,4 @@
 	max-width: 1440px;
 	margin: 0 auto;
 	grid-template-columns: 2fr 8fr;
-	grid-gap: 10px;
 }

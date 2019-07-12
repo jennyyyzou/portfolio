@@ -23,21 +23,32 @@
   </head>
 
   <body>
-   <!-- SETTING FULL PAGE DISPLAY -->
-    <div id="fullpage">
+    <!-- SETTING OVERLAY-->
+    <div id="overlay" class="">
+      <div class="back-button">
+        <a id="overlay-close">&times;</a>
+      </div>
 
+      <div id="overlay-text">
+        <p>I enjoy exploring the design field of user experience through iterative process and inspiration I find in my daily life. My desire is to use storytelling, graphic elements and iteration to problem-solving for developing human-oriented projects that builds communities.
+        <br><br>If you'd like to chat over tea or a beer about collaborations, opportunities, or food, check out my <a href="resume.pdf" target="_blank">resume</a> or shoot me an <a href="mailto:jennyyyzou@hotmail.com?subject=Hi">email</a>!</p>
 
-    <div id="landing-long-content" class="overlay">
+      </div>
+    </div>
+    <!-- <div id="landing-long-content" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeContent()">&times;</a>
       <div class="overlay-content">
         <p>I enjoy exploring the design field of user experience through iterative process and inspiration I find in my daily life.  My desire is to use storytelling, graphic elements and iteration to problem-solving for developing human-oriented projects that builds communities.<p>
 
         <p>If you'd like to chat over tea or a beer about collaborations, opportunities, or food, check out my <a href="resume.pdf" target="_blank">resume</a> or shoot me an <a href="mailto:jennyyyzou@hotmail.com?subject=Hi">email</a>!</p>
       </div>
-    </div>
+    </div> -->
+
+   <!-- SETTING FULL PAGE DISPLAY -->
+    <div id="fullpage">
 
   <!-- LANDING PAGE SECTION -->
-    <section>
+    <section id="about">
     <div class="grid-1">
       <div></div>
       <div><p id="email">say hi at <a href="mailto:jennyyyzou@hotmail.com?subject=Hi">jennyyyzou@hotmail.com</a></p></div>
@@ -55,7 +66,7 @@
             <p class="intro">hi, i’m an interaction designer in love with art directing, copywriting, and building communities </p>
 
             <div class="landing-work-intro grid-3">
-              <div class="landing-work-btn"><p><a href="#work">jump </n>&#8595;</p></a> </div>
+              <div class="landing-work-btn"><p><a href="#work">jump </n>&#8595;</a></p></div>
               <div><p>into my work</p></div>
             </div>
 
@@ -63,10 +74,12 @@
         </div>
 
       <div class="landing-image">
-        <div class="landing-about-btn">
-          <p>get to know<span style="cursor:pointer" onclick="openContent()"> about me &#8594;</span></p>
+        <div class="grid-3">
+          <div><p>get to know</p></div>
+          <!-- <div class="landing-about-btn"><p><span style="cursor:pointer" onclick="openContent()"> about me &#8594;</span></p></div> -->
+          <div class="landing-about-btn"><p><a id="overlay-open">about me &#8594;</a></p></div>
         </div>
-          <img src="img/portrait.jpg" alt="Portrait" id="portrait">
+        <img src="img/portrait.jpg" alt="Portrait" id="portrait">
       </div>
 
       <div class="landing-copy-1">
@@ -96,6 +109,5 @@
 
   <footer>
       <p>made by jenny zou in 2019</p>
-      <!-- <p>say hi to <a href="mailto:jennyyyzou@hotmail.com?subject=Hi" class="in-text-link">jennyyyzou@hotmail.com</a></p> -->
   </footer>
 </html>
