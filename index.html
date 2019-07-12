@@ -23,48 +23,60 @@
   </head>
 
   <body>
+   <!-- SETTING FULL PAGE DISPLAY -->
     <div id="fullpage">
-    <!-- LANDING PAGE SECTION -->
-    <section id="landing-page" class="grid-1">
 
-      <div class="side-nav">
-        <ul>
-          <li><a href="#work">work</a></li>
-          <li><a href="resume.pdf" target="_blank">resume</a></li>
-        </ul>
+
+    <div id="landing-long-content" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeContent()">&times;</a>
+      <div class="overlay-content">
+        <p>I enjoy exploring the design field of user experience through iterative process and inspiration I find in my daily life.  My desire is to use storytelling, graphic elements and iteration to problem-solving for developing human-oriented projects that builds communities.<p>
+
+        <p>If you'd like to chat over tea or a beer about collaborations, opportunities, or food, check out my <a href="resume.pdf" target="_blank">resume</a> or shoot me an <a href="mailto:jennyyyzou@hotmail.com?subject=Hi">email</a>!</p>
       </div>
+    </div>
+
+  <!-- LANDING PAGE SECTION -->
+    <section>
+    <div class="grid-1">
+      <div></div>
+      <div><p id="email">say hi at <a href="mailto:jennyyyzou@hotmail.com?subject=Hi">jennyyyzou@hotmail.com</a></p></div>
+      <div></div>
+    </div>
+
+    <div id="landing-page" class="grid-2">
+      <div class="landing-intro"><h1>I'm</h1></div>
 
       <div class="landing-copy">
         <h1 class="landing-title">Jenny</h1>
-        <div class="divider"></div>
-        <div class="landing-short-content">
-          <p>hi, i’m an <strong>interaction designer</strong> in love with art directing, copywriting, and building communities </p>
-          <p>get to know <a id="about" href="#about">about me ⟶</a></p>
+          <div class="divider"></div>
+
+          <div class="landing-short-content">
+            <p class="intro">hi, i’m an interaction designer in love with art directing, copywriting, and building communities </p>
+
+            <div class="landing-work-intro grid-3">
+              <div class="landing-work-btn"><p><a href="#work">jump </n>&#8595;</p></a> </div>
+              <div><p>into my work</p></div>
+            </div>
+
+            </div>
         </div>
-      </div>
 
       <div class="landing-image">
-        <img src="img/portrait.jpg" alt="Portrait" id="portrait">
-        <div id="landing-long-content">
-
-          <svg id="close-icon-container" fill="#000000" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
-            <g class="close-icon">
-              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
-              <path d="M0 0h24v24H0z" fill="none"></path>
-            </g>
-          </svg>
-
-          <p>I enjoy exploring the design field of user experience through iterative process and inspiration I find in my daily life.  My desire is to use storytelling, graphic elements and iteration to problem-solving for developing human-oriented projects that builds communities.<p>
-
-          <p>If you'd like to chat over tea or a beer about collaborations, opportunities, or food, check out my <a href="resume.pdf" target="_blank">resume</a> or shoot me an <a href="mailto:jennyyyzou@hotmail.com">email</a>!</p>
+        <div class="landing-about-btn">
+          <p>get to know<span style="cursor:pointer" onclick="openContent()"> about me &#8594;</span></p>
         </div>
+          <img src="img/portrait.jpg" alt="Portrait" id="portrait">
       </div>
 
       <div class="landing-copy-1">
         <h1 class="landing-title">Zou</h1>
       </div>
+    </div>
+
     </section>
-    <!-- LANDING PAGE ENDS -->
+<!-- LANDING PAGE SECTION ENDS -->
+
 
     <!-- PROJECT SECTION -->
     <section id="work" class="project-list">
@@ -84,6 +96,6 @@
 
   <footer>
       <p>made by jenny zou in 2019</p>
-      <!-- <p>say hi to <a href="mailto:yyzou@sfu.ca?subject=Hey!" class="in-text-link">jennyyyzou@hotmail.com</a></p> -->
+      <!-- <p>say hi to <a href="mailto:jennyyyzou@hotmail.com?subject=Hi" class="in-text-link">jennyyyzou@hotmail.com</a></p> -->
   </footer>
 </html>

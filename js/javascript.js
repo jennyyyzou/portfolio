@@ -1,7 +1,7 @@
-// SHOWING ABOUT CONTENT
-$(document).ready(function(){
-  $('#about').click(function(){
-    $('#landing-long-content').fadeIn('slow');
-    $('#portrait').hide();
-  });
-});
+function openContent() {
+  document.getElementById("landing-long-content").style.width = "100%";
+}
+
+function closeContent() {
+  document.getElementById("landing-long-content").style.width = "0%";
+}
